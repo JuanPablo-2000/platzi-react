@@ -1,12 +1,15 @@
 import React from "react";
-import '../styles/ProductInfo.scss';
+import '@styles/ProductInfo.scss';
+
+import iconClose from '@icons/icon_close.png';
+import btnAddToCart from '@icons/bt_add_to_cart.svg';
 
 const ProductInfo = () => {
   return (
     <>
       <aside class="product-detail">
         <div class="product-detail-close">
-          <img src="./icons/icon_close.png" alt="close" />
+          <img src={iconClose} alt="close" />
         </div>
         <img
           src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -20,7 +23,7 @@ const ProductInfo = () => {
             function, add your hall or workspace.
           </p>
           <button class="primary-button add-to-cart-button">
-            <img src="./icons/bt_add_to_cart.svg" alt="add to cart" />
+            <img src={btnAddToCart} alt="add to cart" />
             Add to cart
           </button>
         </div>
